@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Descubre productos útiles, accesorios y novedades en Click. Tu mundo, a un click. Compra fácil en Colombia.">
+  <meta property="og:title" content="Click — Tu mundo, a un click">
+  <meta property="og:description" content="Productos, accesorios y novedades para tu día a día. Descubre tu próximo favorito en Click.">
+  <meta property="og:type" content="website">
+  <title>Click — Tu mundo, a un click</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/click-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Descubre algo nuevo. Tu próximo favorito está aquí.</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Click, inicio">
+      <img src="/assets/img/click-mark.svg" alt="" class="brand-mark">
+      <span class="brand-word">C<span>lick</span></span>
+    </a>
+    <form class="search" id="search-form" role="search">
+      <label class="sr-only" for="search-input">Buscar productos</label>
+      <input id="search-input" type="search" placeholder="¿Qué estás buscando?" autocomplete="off">
+      <button aria-label="Buscar" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg></button>
+    </form>
+    <nav class="header-actions" aria-label="Acciones">
+      <button class="icon-action" id="favorites-shortcut" aria-label="Ver favoritos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.1-8.8 10.1-8.8 10.1S3.2 13.8 3.2 8.7a4.5 4.5 0 0 1 8.8-1.2 4.5 4.5 0 0 1 8.8 1.2Z"></path></svg><span class="action-label">Favoritos</span></button>
+      <button class="cart-button" id="cart-open" aria-label="Abrir carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.5L21 8H6"></path><circle cx="9.5" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span>Carrito</span><b id="cart-count">0</b></button>
+    </nav>
+  </header>
+  <nav class="category-nav" aria-label="Categorías">
+    <button class="category-link active" data-category="Todos">Todo</button>
+    <button class="category-link" data-category="Tecnología">Tecnología</button>
+    <button class="category-link" data-category="Hogar">Hogar</button>
+    <button class="category-link" data-category="Automotriz">Automotriz</button>
+    <button class="category-link" data-category="Accesorios">Accesorios</button>
+    <button class="category-link" data-category="Novedades">Novedades</button>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> DESCUBRE · ELIGE · DISFRUTA</div>
+        <h1>Pequeños hallazgos.<br><span>Grandes favoritos.</span></h1>
+        <p>Productos que te hacen la vida más fácil, ideas que inspiran y novedades que vale la pena descubrir.</p>
+        <a href="#productos" class="primary-button">Explorar productos <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-icon">✦</span> Tu mundo, a un click.</div>
+      </div>
+      <div class="hero-art" aria-label="Selección de productos destacados">
+        <div class="art-glow"></div>
+        <div class="floating-chip chip-top"><span>✦</span> Hallazgos para ti</div>
+        <div class="hero-product product-headphones"><div class="headband"></div><div class="earcup left"></div><div class="earcup right"></div><div class="headphone-shine"></div></div>
+        <div class="hero-product product-speaker"><div class="speaker-top"></div><div class="speaker-grill"></div><div class="speaker-light"></div></div>
+        <div class="hero-product product-watch"><div class="watch-strap"></div><div class="watch-face"><div class="watch-time">10:09</div><div class="watch-dot"></div></div></div>
+        <div class="floating-chip chip-bottom"><span class="pulse"></span> Algo bueno te espera</div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      </div>
+      <div class="hero-pagination"><span class="pagination-active"></span><span></span><span></span><small>01 / 03</small></div>
+    </section>
+    <section class="trust-strip" aria-label="Beneficios">
+      <div><span class="trust-icon">⌕</span><span><b>Descubre más</b><small>Ideas para cada día</small></span></div>
+      <div><span class="trust-icon">◇</span><span><b>Compra con claridad</b><small>Información transparente</small></span></div>
+      <div><span class="trust-icon">↗</span><span><b>Nuevas posibilidades</b><small>Siempre hay algo nuevo</small></span></div>
+    </section>
+    <section class="catalog-section" id="productos">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> LA SELECCIÓN CLICK</div><h2>Encuentra tu próximo <span>favorito.</span></h2><p>Una selección inicial de productos para inspirarte.</p></div>
+        <div class="catalog-tools"><label class="sr-only" for="sort-select">Ordenar productos</label><select id="sort-select"><option value="featured">Recomendados</option><option value="price-asc">Precio: menor a mayor</option><option value="price-desc">Precio: mayor a menor</option><option value="name">Nombre A–Z</option></select></div>
+      </div>
+      <div class="category-pills" aria-label="Filtrar por categoría">
+        <button class="pill active" data-category="Todos">Todo</button><button class="pill" data-category="Tecnología">Tecnología</button><button class="pill" data-category="Hogar">Hogar</button><button class="pill" data-category="Automotriz">Automotriz</button><button class="pill" data-category="Accesorios">Accesorios</button>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="empty-state"><span>⌕</span><h3>No encontramos ese producto</h3><p>Prueba con otra palabra o cambia la categoría.</p><button class="text-button" id="clear-filters">Ver todos los productos ↗</button></div>
+      <div class="catalog-foot"><span>Mostrando una selección de demostración</span><button class="text-button" id="show-all">Ver toda la selección <span>→</span></button></div>
+    </section>
+    <section class="discover-banner">
+      <div class="banner-sparkle">✳</div><div class="banner-copy"><span class="eyebrow">SIEMPRE HAY ALGO NUEVO</span><h2>Tu siguiente gran hallazgo<br>puede estar <span>a un click.</span></h2><p>Explora ideas útiles, accesorios y productos pensados para ti.</p></div><a class="banner-button" href="#productos">Descubrir ahora <span>↗</span></a><div class="banner-orb"></div>
+    </section>
+    <section class="newsletter">
+      <div><span class="eyebrow">EL CLUB CLICK</span><h2>Buenas ideas, <span>directo a tu inbox.</span></h2><p>Más adelante podrás suscribirte para recibir novedades y ofertas.</p></div>
+      <form id="newsletter-form" class="newsletter-form"><label class="sr-only" for="newsletter-email">Correo electrónico</label><input id="newsletter-email" type="email" placeholder="Tu correo electrónico" disabled><button type="button" disabled>Próximamente</button><small>Estamos preparando esta función para el lanzamiento.</small></form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="/"><img src="/assets/img/click-mark.svg" alt="" class="brand-mark"><span class="brand-word">C<span>lick</span></span></a><p>Tu mundo, a un click.<br>Productos e ideas para descubrir.</p><div class="footer-social"><span>Una nueva forma de descubrir.</span></div></div>
+    <div class="footer-links"><div><b>Explora</b><a href="#productos">Todos los productos</a><a href="#productos" data-footer-category="Tecnología">Tecnología</a><a href="#productos" data-footer-category="Hogar">Hogar</a></div><div><b>Ayuda</b><a href="#footer-info">Preguntas frecuentes</a><a href="#footer-info">Envíos y devoluciones</a><a href="#footer-info">Contáctanos</a></div><div><b>Información</b><a href="#footer-info">Privacidad</a><a href="#footer-info">Términos y condiciones</a></div></div>
+    <div class="footer-bottom" id="footer-info"><span>© <span id="year"></span> Click. Una idea en construcción.</span><span>Diseñado para descubrir más. <b>✦</b></span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Tu carrito" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Tu carrito <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="cart-close" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><div class="empty-bag">↗</div><h3>Tu carrito está esperando</h3><p>Agrega productos que te gusten y aparecerán aquí.</p><button class="primary-button" id="continue-shopping">Explorar productos</button></div>
+    <div class="cart-summary hidden" id="cart-summary"><div class="subtotal-row"><span>Subtotal estimado</span><b id="cart-subtotal">$ 0</b></div><p>Los costos de envío se calcularán cuando estén habilitados.</p><button class="primary-button checkout-button" id="checkout-button">Continuar <span>→</span></button><small>La compra y los pagos estarán disponibles en una siguiente etapa.</small></div>
+  </aside>
+  <dialog class="product-dialog" id="product-dialog"><button class="close-button dialog-close" id="dialog-close" aria-label="Cerrar">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
