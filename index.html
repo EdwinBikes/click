@@ -53,9 +53,9 @@
       <div class="hero-art" aria-label="Selección de productos destacados">
         <div class="art-glow"></div>
         <div class="floating-chip chip-top"><span>✦</span> Hallazgos para ti</div>
-        <div class="hero-product product-headphones"><div class="headband"></div><div class="earcup left"></div><div class="earcup right"></div><div class="headphone-shine"></div></div>
-        <div class="hero-product product-speaker"><div class="speaker-top"></div><div class="speaker-grill"></div><div class="speaker-light"></div></div>
-        <div class="hero-product product-watch"><div class="watch-strap"></div><div class="watch-face"><div class="watch-time">10:09</div><div class="watch-dot"></div></div></div>
+        <div class="hero-product product-headphones" aria-hidden="true">🎧</div>
+        <div class="hero-product product-speaker" aria-hidden="true">🔊</div>
+        <div class="hero-product product-watch" aria-hidden="true">⌚</div>
         <div class="floating-chip chip-bottom"><span class="pulse"></span> Algo bueno te espera</div>
         <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
       </div>
@@ -92,7 +92,7 @@
     <div class="footer-bottom" id="footer-info"><span>© <span id="year"></span> Click. Una idea en construcción.</span><span>Diseñado para descubrir más. <b>✦</b></span></div>
   </footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <div class="drawer-backdrop" id="backdrop"></div>
+  <div class="backdrop" id="backdrop"></div>
   <aside class="cart-drawer" id="cart-drawer" aria-label="Tu carrito" aria-hidden="true">
     <div class="drawer-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Tu carrito <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="cart-close" aria-label="Cerrar carrito">×</button></div>
     <div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><div class="empty-bag">↗</div><h3>Tu carrito está esperando</h3><p>Agrega productos que te gusten y aparecerán aquí.</p><button class="primary-button" id="continue-shopping">Explorar productos</button></div>
